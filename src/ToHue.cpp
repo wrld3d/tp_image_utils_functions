@@ -2,7 +2,7 @@
 
 #include "tp_image_utils/ColorMap.h"
 
-#include <math.h>
+#include <cmath>
 
 namespace tp_image_utils_functions
 {

@@ -4,7 +4,7 @@
 
 #include "tp_quad_tree/QuadTreeInt.h"
 
-#include <math.h>
+#include <cmath>
 
 namespace tp_image_utils_functions
 {
