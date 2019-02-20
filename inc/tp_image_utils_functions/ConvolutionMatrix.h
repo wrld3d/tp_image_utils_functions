@@ -47,6 +47,9 @@ public:
   //! Create a 3x3 identity matrix
   void makeIdentity();
 
+  //################################################################################################
+  void makeBlur();
+
 private:
   std::vector<int> m_matrixData;
   int m_width;
