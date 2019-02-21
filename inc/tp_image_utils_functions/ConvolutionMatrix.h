@@ -20,19 +20,19 @@ public:
   ConvolutionMatrix(const std::string& text);
 
   //################################################################################################
-  ConvolutionMatrix(const std::vector<int>& matrixData, int width, int height);
+  ConvolutionMatrix(const std::vector<int>& matrixData, size_t width, size_t height);
 
   //################################################################################################
-  int width()const;
+  size_t width()const;
 
   //################################################################################################
-  int height()const;
+  size_t height()const;
 
   //################################################################################################
   std::vector<int> matrixData()const;
 
   //################################################################################################
-  void setMatrixData(const std::vector<int>& matrixData, int width, int height);
+  void setMatrixData(const std::vector<int>& matrixData, size_t width, size_t height);
 
   //################################################################################################
   std::string toString()const;
@@ -52,8 +52,8 @@ public:
 
 private:
   std::vector<int> m_matrixData;
-  int m_width;
-  int m_height;
+  size_t m_width;
+  size_t m_height;
 };
 
 //##################################################################################################
@@ -70,7 +70,7 @@ Apply a convolution matrix to the image and return the result.
 
 \return The image with the convolution matrix applied.
 */
-tp_image_utils::ColorMap convolutionMatrix(const tp_image_utils::ColorMap& src, const std::vector<int>& matrixData, int width, int height);
+tp_image_utils::ColorMap convolutionMatrix(const tp_image_utils::ColorMap& src, const std::vector<int>& matrixData, size_t width, size_t height);
 }
 
 #endif
