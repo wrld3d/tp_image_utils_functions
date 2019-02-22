@@ -2,6 +2,8 @@
 
 #include "tp_utils/DebugUtils.h"
 
+#include <array>
+
 namespace tp_image_utils_functions
 {
 
