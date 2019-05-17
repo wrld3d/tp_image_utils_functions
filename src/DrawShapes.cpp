@@ -35,6 +35,22 @@ tp_image_utils::ColorMap drawPoints(const tp_image_utils::ColorMap& image,
     }
   }
 
+  if(style.drawPoint)
+  {
+    for(const auto& pts : points)
+    {
+      for(const auto& p : pts)
+      {
+        int xMax = int(p.x)+3;
+        int yMax = int(p.y)+3;
+
+        for(int x=int(p.x)-2; x<xMax; x++)
+          for(int y=int(p.y)-2; y<yMax; y++)
+            dst.setPixel(size_t(x), size_t(y), p.color);
+      }
+    }
+  }
+
   return dst;
 }
 
