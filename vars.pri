@@ -78,3 +78,6 @@ HEADERS += inc/tp_image_utils_functions/DrawMask.h
 
 SOURCES += src/DrawShapes.cpp
 HEADERS += inc/tp_image_utils_functions/DrawShapes.h
+
+SOURCES += src/MeanColor.cpp
+HEADERS += inc/tp_image_utils_functions/MeanColor.h
